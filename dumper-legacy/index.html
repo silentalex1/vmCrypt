@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMCrypt - Dumper Legacy</title>
+    <link rel="stylesheet" href="dumper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="playground-body">
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">VMCrypt</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link active">Playground</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Sign In</a>
+                <a href="#" class="btn-primary small">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="playground-main">
+        <div class="promo-banner">
+            <div class="banner-icon">
+                <svg class="icon-svg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+            </div>
+            <div class="banner-text">
+                <h3>Need stronger deobfuscator?</h3>
+                <p>Standard dumper can deobfuscate with automated tools. This vm deep analysis dumper decompiles any codes to bytecode that is easily readable.</p>
+            </div>
+            <button class="btn-banner">Get VM Protection &rarr;</button>
+        </div>
+
+        <div class="workspace">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Deobfuscation Options</h3>
+                    <button class="reset-btn" id="reset-btn">Reset All</button>
+                </div>
+
+                <div class="options-group">
+                    <h4>Analysis Mode</h4>
+                    <select class="mode-select" id="mode-select">
+                        <option value="quick">Quick Scan</option>
+                        <option value="deep" selected>Deep Analysis</option>
+                        <option value="dump">Fully Dump</option>
+                    </select>
+                </div>
+
+                <div class="options-grid">
+                    <div class="opt-col">
+                        <h4>Basic Cleanup</h4>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="opt-format" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span>Format Code</span>
+                        </div>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="opt-comments" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span>Remove Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="opt-col">
+                        <h4>VM Reversing</h4>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="opt-flow" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span>Flatten Control Flow</span>
+                        </div>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="opt-dead" checked>
+                                <span class="slider"></span>
+                            </label>
+                            <span>Dead Code Removal</span>
+                        </div>
+                        <div class="toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="opt-rotate">
+                                <span class="slider"></span>
+                            </label>
+                            <span>String Array Rotate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="options-group">
+                    <h4>Advanced Filters</h4>
+                    <input type="text" placeholder="Custom Regex Filter" class="input-dark" id="custom-regex">
+                </div>
+            </aside>
+
+            <section class="editor-container">
+                <div class="editor-tabs">
+                    <button class="tab active">Editor</button>
+                    <button class="tab">Upload</button>
+                    <button class="tab">Output</button>
+                </div>
+                
+                <div class="code-area">
+                    <div class="line-numbers">1</div>
+                    <textarea id="code-input" placeholder="Paste your protected JavaScript/Lua code here..."></textarea>
+                </div>
+
+                <div class="editor-footer">
+                    <span id="status-bar">0 B / 50 MB</span>
+                    <button id="btn-deobfuscate" class="btn-primary large">Deobfuscate</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="dumper.js"></script>
+</body>
+</html>

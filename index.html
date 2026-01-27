@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMCrypt Deobfuscator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">VMCrypt</a>
+            <div class="nav-links">
+                <button id="btn-pricing" class="nav-btn">Pricing</button>
+                <a href="#docs" class="nav-link">Documentation</a>
+                <a href="dumper-legacy/index.html" class="nav-link">Playground</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="icon-svg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>
+                </button>
+                <a href="#login" class="btn-text">Sign In</a>
+                <a href="#register" class="btn-primary small">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>VMCrypt Deobfuscator</h1>
+                <p class="subtitle">Transform your code into a custom bytecode that runs on a virtual machine. The strongest protection against reverse engineering.</p>
+                <div class="hero-actions">
+                    <a href="dumper-legacy/index.html" class="btn-primary large">Get VM Deobfuscator &rarr;</a>
+                    <p class="status-text">The obfuscator is still being worked on.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-grid">
+            <div class="card">
+                <div class="icon-box">
+                    <svg class="icon-svg lg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+                </div>
+                <h3>Strongest Protection</h3>
+                <p>Code is converted to bytecode that cannot be directly understood by standard tools.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box">
+                    <svg class="icon-svg lg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
+                </div>
+                <h3>Anti-decompilation</h3>
+                <p>No standard JavaScript structures remain to reverse engineer.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box">
+                    <svg class="icon-svg lg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>
+                </div>
+                <h3>Customizable VM</h3>
+                <p>Each obfuscation generates unique opcodes and VM structures.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box">
+                    <svg class="icon-svg lg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" /></svg>
+                </div>
+                <h3>Layered Security</h3>
+                <p>Combine with other obfuscation options for defense in depth.</p>
+            </div>
+        </section>
+
+        <section class="highlight-box">
+            <div class="highlight-content">
+                <div class="highlight-icon-box">
+                    <svg class="icon-svg lg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+                </div>
+                <div class="highlight-text">
+                    <h3>Strongest Deobfuscator and Obfuscator Out There.</h3>
+                    <p>This deobfuscator is its own VM deobfuscator that is able to deep analysis and able to deobfuscate codes from obfuscator.io. This has been tested and it works perfectly fine. Fast. Simple. And quickly accurate. This website is a deobfuscator website and a obfuscator website as well.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <span class="step-num">01</span>
+                    <h3>Configure Options</h3>
+                    <p>Choose a mode in the dumper settings, and additional deobfuscation layers.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">02</span>
+                    <h3>Submit Code</h3>
+                    <p>Use our web interface or API to submit the protected Lua or JS code.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">03</span>
+                    <h3>Get Result</h3>
+                    <p>Download your VM-deobfuscated code with full code comments applied to understand the source.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <h2>See How The VM Dumper Works</h2>
+            <div class="code-windows">
+                <div class="window">
+                    <div class="window-header">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                        <span class="filename">before_protected.js</span>
+                    </div>
+                    <div class="code-content">
+<pre><code>(function(x, y){
+    const _0x4f = [0x1, 0x5, 0x9];
+    return function(c) {
+        while(!![]) {
+        }
+    }
+})(_0x1a, _0x2b);</code></pre>
+                    </div>
+                </div>
+
+                <div class="window">
+                    <div class="window-header">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                        <span class="filename">after_dump.js</span>
+                        <span class="badge">Deobfuscated</span>
+                    </div>
+                    <div class="code-content">
+<pre><code>function calculateTotal(price, tax) {
+    const rate = 0.15;
+    
+    if (price > 100) {
+        return price * (1 + rate);
+    }
+    
+    return price + tax;
+}
+console.log(calculateTotal(50, 5));</code></pre>
+                    </div>
+                </div>
+            </div>
+            <p class="comparison-footer">The original logic is converted to custom bytecode that only the embedded VM dumper can execute. Deep analysis tools can understand the code with reverse-engineering the entire VM protected code.</p>
+        </section>
+    </main>
+
+    <div id="pricing-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>VMCrypt Pricing</h2>
+                <div class="close-modal">
+                    <svg class="icon-svg" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                </div>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Basic Dumper</h3>
+                    <div class="price">$0<span>/mo</span></div>
+                    <ul>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Quick Analysis Mode</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>One Dumper Mode (Quick)</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>50MB File Limit</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>90% Accuracy with source return</li>
+                    </ul>
+                    <button class="btn-primary">Current Plan</button>
+                </div>
+                <div class="price-card recommended">
+                    <h3>Pro Analyst</h3>
+                    <div class="price">$10<span>/year</span></div>
+                    <ul>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Deep & Full Dump Modes</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Full VM Dumper</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>No File Limit</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>API Access</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>100% Accurate Full Source</li>
+                        <li><svg class="icon-svg sm" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Access to Discord Bot</li>
+                    </ul>
+                    <button class="btn-primary large">Upgrade</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 VMCrypt Deobfuscator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
