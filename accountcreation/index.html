@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - VMCrypt</title>
+    <link rel="stylesheet" href="accountcreate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <a href="../index.html" class="logo">VMCrypt</a>
+            <div class="header-text">
+                <h2>Create Account</h2>
+                <p>Join to access advanced deobfuscation features.</p>
+            </div>
+            
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" placeholder="Choose a username" autocomplete="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Create a password" autocomplete="new-password" required>
+                </div>
+                <div id="reg-error" class="error-text"></div>
+                <button type="submit" class="btn-submit">Create Account</button>
+            </form>
+            
+            <div class="footer-links">
+                <p>Already have an account? <a href="../accountlogin/index.html">Sign In</a></p>
+                <a href="../index.html" class="back-link">Back to Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="accountcreate.js"></script>
+</body>
+</html>
