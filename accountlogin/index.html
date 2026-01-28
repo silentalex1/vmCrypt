@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - VMCrypt</title>
+    <link rel="stylesheet" href="accountlogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <a href="../index.html" class="logo">VMCrypt</a>
+            <div class="header-text">
+                <h2>Welcome Back</h2>
+                <p>Enter your credentials to access the deobfuscator.</p>
+            </div>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" autocomplete="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" autocomplete="current-password" required>
+                </div>
+                <div id="error-msg" class="error-text"></div>
+                <button type="submit" class="btn-submit">Sign In</button>
+            </form>
+            
+            <div class="footer-links">
+                <p>Don't have an account? <a href="../accountcreation/index.html">Register now</a></p>
+                <a href="../index.html" class="back-link">Back to Home</a>
+            </div>
+        </div>
+    </div>
+    <script src="accountlogin.js"></script>
+</body>
+</html>
